@@ -74,7 +74,7 @@ def triangular(a,b,c,_X)
 		if 0 <= i && i < a1
 			x = a + Math.sqrt((b-a)*(c-a)*i)
 		elsif a1 <= i && i <= 1
-			x = b + Math.sqrt(((c-a)*i-(b-a))*(c-b))
+			x = -Math.sqrt((b-c)*(b-c)+(b-a)*(c-b)-i*(c-a)*(c-b))+c
 		end	
 		nums.push(x)
 	end
@@ -178,9 +178,9 @@ x = generarNumsAleatorios("mixto",[56,754,543,10000],"triangular",[2,4,6],2000,1
 x = generarNumsAleatorios("mixto",[56,754,543,10000],"poisson",[10],2000,10)
 x = generarNumsAleatorios("mixto",[56,754,543,10000],"binomial",[10,0.5],2000,10)
 	# Multiplicativo
-#x = generarNumsAleatorios("multiplicativo",[56,754,543,10000],"normal",[0,1],2000,10)
-#x = generarNumsAleatorios("multiplicativo",[56,754,543],"uniforme",[2,6],2000,10)
-#x = generarNumsAleatorios("multiplicativo",[56,754,543,10000],"exponencial",[0.5],50000,10)
-#x = generarNumsAleatorios("multiplicativo",[56,754,543],"triangular",[2,4,6],2000,10)
-#x = generarNumsAleatorios("multiplicativo",[56,754,543,10000],"poisson",[10],2000,10)
-#x = generarNumsAleatorios("multiplicativo",[56,754,543,10000],"binomial",[10,0.5],2000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"normal",[0,1],2000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"uniforme",[2,6],2000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"exponencial",[0.5],50000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"triangular",[2,4,6],2000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"poisson",[10],2000,10)
+x = generarNumsAleatorios("multiplicativo",[56,754,10000],"binomial",[10,0.5],2000,10)
