@@ -170,17 +170,19 @@ def plot(x,n,min,max,name) #(Arreglo,Número de Barras,Nombre del archivo)
 end
 
 # Main
+# generarNumsAleatorios(generador,parametros generador, funcion, parametros funcion, 
+#						cantidad de numeros aleatorios, numero de barras en la gráfica)
 	# Mixto
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"normal",[0,1],2000,10)
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"uniforme",[2,6],2000,10)
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"exponencial",[0.5],50000,10)
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"triangular",[2,4,6],2000,10)
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"poisson",[10],2000,10)
-x = generarNumsAleatorios("mixto",[56,754,543,10000],"binomial",[10,0.5],2000,10)
+x = generarNumsAleatorios("mixto",[1,330,100,2303],"normal",[15,3],50000,10)
+x = generarNumsAleatorios("mixto",[1,330,100,2303],"uniforme",[4,8],50000,10) 
+x = generarNumsAleatorios("mixto",[13,109,621,997],"exponencial",[0.5],50000,10)
+x = generarNumsAleatorios("mixto",[1,330,100,2303],"triangular",[6,8,10],50000,10)
+x = generarNumsAleatorios("mixto",[1,330,100,2303],"poisson",[15],50000,10)
+x = generarNumsAleatorios("mixto",[1,330,100,2303],"binomial",[15,0.5],2000,10)
 	# Multiplicativo
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"normal",[0,1],2000,10)
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"uniforme",[2,6],2000,10)
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"exponencial",[0.5],50000,10)
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"triangular",[2,4,6],2000,10)
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"poisson",[10],2000,10)
-x = generarNumsAleatorios("multiplicativo",[56,754,10000],"binomial",[10,0.5],2000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"normal",[15,3],50000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"uniforme",[4,8],50000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"exponencial",[0.5],50000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"triangular",[6,8,10],50000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"poisson",[15],50000,10)
+x = generarNumsAleatorios("multiplicativo",[121,413,997],"binomial",[15,0.5],50000,10)
