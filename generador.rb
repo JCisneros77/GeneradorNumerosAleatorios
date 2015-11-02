@@ -67,7 +67,7 @@ def normal(miu,sigma,generador,listaGenerador,n)
 end
 
 # Función Triangular
-def triangular(a,b,c,_X)
+def triangular(a,b,c,_X) # Inversa
 	nums = Array.new()
 	a1 = (b-a).to_f/(c-a)
 	_X.each do |i|
